@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2P1_T3.View.SecondaryPage">
+
+    <ScrollView>
+        <StackLayout>
+
+            <Label Text="id: " FontSize="25" Margin="15,22,0,0"/>
+            <Entry x:Name="Id" 
+                   Keyboard="Text"
+                   Margin="15,0,15,0"
+                   IsEnabled="False"
+                   Text="{Binding id}"
+                   />
+
+            <Label Text="Nombre: " FontSize="25" Margin="15,22,0,0"/>
+            <Entry x:Name="Nombres" 
+                   Placeholder="Ejemplo: Jorge Roberto"
+                   Keyboard="Text"
+                   Margin="15,0,15,0"
+                   Text="{Binding nombres}"
+                   />
+
+            <Label Text="Apellidos: " FontSize="25" Margin="15,22,0,0"/>
+            <Entry x:Name="Apellidos" 
+                   Placeholder="Ejemplo: Diaz Ramos"
+                   Keyboard="Text"
+                   Margin="15,0,15,0"
+                   Text="{Binding apellidos}"
+                   />
+
+            <Label Text="Edad: " FontSize="25" Margin="15,22,0,0"/>
+            <Entry x:Name="Edad" 
+                   Placeholder="Ejemplo: 23"
+                   Keyboard="Numeric"
+                   Margin="15,0,15,0"
+                   Text="{Binding edad}"
+                   />
+
+            <Label Text="Correo: " FontSize="25" Margin="15,22,0,0"/>
+            <Entry x:Name="Correo" 
+                   Placeholder="Ejemplo: correo.ejemplo@uth.hn"
+                   Keyboard="Email"
+                   Margin="15,0,15,0"
+                   Text="{Binding correo}"
+                   />
+
+            <Label Text="Direccion: " FontSize="25" Margin="15,22,0,0"/>
+            <Entry x:Name="Direccion" 
+                   Placeholder="Ejemplo: La Ceiba, Atlantida"
+                   Keyboard="Text"
+                   Margin="15,0,15,0"
+                   Text="{Binding direccion}"
+                   />
+
+
+            <Button x:Name="btnGuardar"
+                    Text="Guardar/Modificar"
+                    Margin="30,30,30,0"
+                    CornerRadius="10"
+                    Clicked="btnGuardar_Clicked"
+                    />
+
+            <Button x:Name="btnEliminar"
+                    Text="Eliminar"
+                    Margin="30,10,30,0"
+                    CornerRadius="10"
+                    Clicked="btnEliminar_Clicked"
+                    />
+
+            <Button x:Name="btnLimpiar"
+                    Text="Limpiar"
+                    Margin="30,10,30,10"
+                    Background="red"
+                    CornerRadius="10"
+                    Clicked="btnLimpiar_Clicked"
+                    />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
